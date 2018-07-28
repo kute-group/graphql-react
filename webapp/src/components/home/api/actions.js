@@ -26,7 +26,7 @@ export function getList(isLoading = true) {
     return axios.post(routesApi, queryBuilder({
       type: 'query',
       operation: 'apps',
-      fields: ['id', 'name', 'description']
+      fields: ['id', 'name', 'description', 'code']
     }))
       .then((response) => {
         dispatch({
@@ -56,7 +56,7 @@ export function get(id, isLoading = true) {
       type: 'query',
       operation: 'app',
       data: {id: parseInt(id, 10)},
-      fields: ['id', 'name', 'description']
+      fields: ['id', 'name', 'description', 'code']
     }))
       .then((response) => {
         dispatch({

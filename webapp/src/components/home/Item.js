@@ -10,7 +10,7 @@ const Item = (props) => {
     const { item } = props;
     return(
         <div className="item">
-          <Link to={`/app/${item.id}`}>
+          <Link to={`/app/${item.id}/${item.code}`}>
               <img src="http://hotfunapps.com/soulmates/images/ogshare.jpg" />
               <div>
                   <h3>{item.name}</h3>

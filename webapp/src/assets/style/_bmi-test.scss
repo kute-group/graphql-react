@@ -1,0 +1,100 @@
+.bmi-test{
+  padding: 0 30px;
+  span{
+    width: 160px;
+    display: block;
+    float: left;
+    font-weight: bold;
+    line-height: 35px;
+  }
+  input{
+    width: 400px;
+    height: 35px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  button{
+    width: 140px;
+    height: 35px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    padding: 0 30px;
+    font-weight: bold;
+    font-size: 20px;
+    background: blue;
+    color: white;
+  }
+  .rank-bmi{
+    clear: both;
+    width: 100%;
+    margin: 25px 0;
+    float: left;
+    box-sizing: border-box;
+    img.share{
+      width: 250px !important;
+      margin: 40px 30px;
+      display: block;
+      margin: auto;
+      cursor: pointer;
+    }
+    .image-share{
+      position: relative;
+      img{
+        width: 100%;
+        
+      }
+      .info{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        h2{
+          margin-top: 25%;
+          padding: 10px 50px;
+          color: white;
+          font-size: 2em;
+        }
+        p{
+          padding: 0px 50px;
+          color: white;
+        }
+      }
+    }
+    ul{
+      margin: 0;
+      padding: 0;
+      li{
+        box-sizing: border-box;
+        float: left;
+        width: 25%;
+        list-style: none;
+        height: 35px;
+        border: 0px solid #fff;
+        line-height: 35px;
+        color: #fff;
+        text-align: center;
+        &.underweight{
+          background: #05b1bf;
+        }
+        &.normal{
+          background: #2cb507
+        }
+        &.overweight{
+          background: #e16d06;
+        }
+        &.obese{
+          background: #921010;
+        }
+      }
+      
+    }
+  }
+}

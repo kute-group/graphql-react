@@ -6,6 +6,7 @@
   "scripts": {
     "start-lodash": "nodemon 01-lodash.js",
     "start-aws": "nodemon 02-aws-sdk.js",
+    "start-logger": "nodemon 03-logger.js",
     "test": "mocha"
   },
   "author": "",
@@ -21,6 +22,8 @@
     "express": "^4.16.3",
     "express-formidable": "^1.0.0",
     "fs": "^0.0.1-security",
-    "lodash": "^4.17.10"
+    "lodash": "^4.17.10",
+    "logger": "^0.0.1",
+    "winston": "^3.0.0"
   }
 }

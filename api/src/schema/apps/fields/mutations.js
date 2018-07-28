@@ -13,7 +13,10 @@ export const appCreate = {
       name: 'name',
       type: GraphQLString
     },
-
+    code: {
+      name: 'code',
+      type: GraphQLString
+    },
     description: {
       name: 'description',
       type: GraphQLString

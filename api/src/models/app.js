@@ -6,6 +6,9 @@ export default (sequelize, DataTypes) => {
     },
     description: {
       type: DataTypes.TEXT
+    },
+    code: {
+      type: DataTypes.TEXT
     }
   })
 }

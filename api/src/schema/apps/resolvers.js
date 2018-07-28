@@ -12,10 +12,11 @@ export async function getAll() {
 }
 
 // Create app
-export async function create(parentValue, {name, app}) {
+export async function create(parentValue, {name, app, code}) {
   return await models.App.create({
     name,
-    app
+    app,
+    code
   })
 }
 
