@@ -1,5 +1,6 @@
 // App Imports
-import models from '../../models'
+const { v4 } = require('uuid');
+import models from '../../models';
 
 // Get app by ID
 export async function getById(parentValue, {id}) {
@@ -12,8 +13,9 @@ export async function getAll() {
 }
 
 // Create app
-export async function create(parentValue, {name, app, code}) {
+export async function create(parentValue, {id, name, app, code}) {
   return await models.App.create({
+    id: v4(),
     name,
     app,
     code

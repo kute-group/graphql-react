@@ -7,7 +7,7 @@ const ThoughtType = new GraphQLObjectType({
   description: '...',
 
   fields: () => ({
-    id: {type: GraphQLInt},
+    id: {type: GraphQLString},
     name: {type: GraphQLString},
     thought: {type: GraphQLString},
     createdAt: {type: GraphQLString},

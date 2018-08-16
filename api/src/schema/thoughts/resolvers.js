@@ -1,5 +1,7 @@
 // App Imports
+const { v4 } = require('uuid');
 import models from '../../models'
+
 
 // Get thoughts by ID
 export async function getById(parentValue, {id}) {
@@ -12,8 +14,9 @@ export async function getAll() {
 }
 
 // Create thought
-export async function create(parentValue, {name, thought}) {
+export async function create(parentValue, {id, name, thought}) {
   return await models.Thought.create({
+    id: v4(),
     name,
     thought
   })
