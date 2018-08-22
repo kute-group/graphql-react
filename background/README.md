@@ -68,5 +68,7 @@ To order your list, precede each line with a number
 ```
 
  ## image
+ this is my image in 2018
+
  this is my image ![luong ba hop](https://i0.wp.com/teachyourself.vn/wp-content/uploads/2015/10/28168149_867975846717615_7950735090634773589_n.jpg?w=960)
 
