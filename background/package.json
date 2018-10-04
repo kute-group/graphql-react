@@ -6,7 +6,8 @@
   "scripts": {
     "start-lodash": "nodemon 01-lodash.js",
     "start-aws": "nodemon 02-aws-sdk.js",
-    "start-logger": "nodemon 03-logger.js",
+		"start-logger": "nodemon 03-logger.js",
+		"start-callback": "nodemon 08-callback.js",
     "test": "mocha"
   },
   "author": "",

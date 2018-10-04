@@ -7,9 +7,9 @@ const fs = require('fs')
 const AWS = require('aws-sdk');
 const Busboy = require('busboy');
 
-const BUCKET_NAME = 'seta-image-test';
-const IAM_USER_KEY = 'AKIAIE5C4S64IZRM3MPA';
-const IAM_USER_SECRET = 'x';
+const BUCKET_NAME = 's3-wzd-vtndemo-or-1';
+const IAM_USER_KEY = 'AKIAIIQ5WI7B6FEWKHQA';
+const IAM_USER_SECRET = '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';
 function uploadToS3(file, res) {
  let s3bucket = new AWS.S3({
    accessKeyId: IAM_USER_KEY,
@@ -24,17 +24,16 @@ function uploadToS3(file, res) {
     Key: file.name,
     Body: image,
     ContentEncoding: 'base64',
-    ContentType: 'image/jpeg',
-    ACL: 'public-read',
    };
   //  console.log(params, 'params');
   //  console.log(image, 'file');
    s3bucket.upload(params, function (err, data) {
     if (err) {
-     console.log('error in callback', err);
+     console.log('-----------error in callback', err);
+     res.json({err: err});;
     }
-    console.log('result',data);
-    res.json({url: data.Location});
+    console.log('result------------',data);
+    res.json({url: data});
    });
  });
 }

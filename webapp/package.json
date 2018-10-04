@@ -106,5 +106,8 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+	},
+	"engines": {
+    "node": "8.11.2"
   }
 }
